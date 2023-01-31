@@ -1,6 +1,10 @@
 import './App.css';
+import {test} from './machine_learning/perceptron'
 
 function App() {
+
+  const result = test().toString();
+
   return (
     <div className="App">
       <header className="App-header">
@@ -21,6 +25,7 @@ function App() {
             Learn React
           </a>
         </p>
+      <p>{result}</p>
       </header>
     </div>
   );
